@@ -19,8 +19,8 @@
 <div class="container pt-5">
   <form action="/stages-result" method="POST">
     <label class="form-label">Choose your stages:</label>
-    <input class="form-control" list="buses" name="first_stage" placeholder="Select your origin stage"><br>
-    <input class="form-control" list="buses" name="second_stage" placeholder="Select your destination stage">
+    <input class="form-control" list="buses" name="first_stage" placeholder="Select your origin stage">
+    <input class="form-control mt-3" list="buses" name="second_stage" placeholder="Select your destination stage">
     <datalist id="buses">
       {% for x in stage %}
         <option value="{{x}}">
